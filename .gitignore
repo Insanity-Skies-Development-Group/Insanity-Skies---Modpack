@@ -1,0 +1,43 @@
+# Ignore eveything so repository can be used in game instance
+/*
+
+# File Unignores
+!.gitignore
+!.gitattributes
+!LICENSE
+!panorama.dat
+!README.md
+
+# Directory Unignores
+# !mods/
+!kubejs/
+!panoramas/
+!scripts/
+!compile_data/
+!.github/
+
+# Directory Visibility
+!config/
+config/*
+!defaultconfigs/
+defaultconfigs/*
+
+# Config Unignore - Directories
+!config/fancymenu/
+!config/ftbquests/
+!config/gamestages/
+!config/hammerlib/
+!config/jade/
+
+# Config Unignore - File
+!config/jei/blacklist.json
+!config/badmobs-common.toml
+!config/create-*
+!config/createlowheated-*
+!config/cucumber-tags.json
+!config/exnihilosequentia-common.toml
+!config/gtceu.yaml
+!defaultconfigs/create-*
+
+# Subdirectory Rehide
+config/fancymenu/ui_themes*

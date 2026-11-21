@@ -1,0 +1,1299 @@
+{
+	autofocus_id: "629BDB317D0A8DD3"
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "a_descent_into_madness"
+	group: "5829B93DCAFAD4B8"
+	icon: "minecraft:coarse_dirt"
+	id: "7A12DCD07EA63A8A"
+	images: [{
+		height: 1.0d
+		image: "ftbchunks:textures/faces/minecraft/cat.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: 186.0d
+		y: -104.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This isn't the normal StarT pack you are used to, if it was an option there, it's time to become an expert here."
+				""
+				"Make Sure to Keep 1 Coarse Dirt available at &4&l[ALL TIMES]&r to drastically reduce softlocking odds"
+			]
+			icon: "minecraft:coarse_dirt"
+			id: "11792AD3856CC11A"
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				icon: "minecraft:coarse_dirt"
+				id: "3573B9BF6334141B"
+				observe_type: 0
+				timer: 0L
+				title: "Strange Beginnings"
+				to_observe: "minecraft:coarse_dirt"
+				type: "observation"
+			}]
+			title: "So.... You have chosen death"
+			x: -23.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11792AD3856CC11A"]
+			description: [
+				"Only break a few, you'll need some for Fibers and to get Saplings"
+				""
+				"This guide will walk you through every step if you get stuck on what is next, you &4&lCAN Softlock&r at the start if careless so read &lCarefully&r"
+				""
+				"How to not Softlock with 8 Dead Bushes:"
+				""
+				"4: Sticks (4-8)"
+				"- 1 For Knife"
+				"- 1 For Saw"
+				"- 2 For Axe"
+				"3: Straw (6-9)"
+				"- 1 For Saw"
+				"- 1 for Axe"
+				"- 4 For Crafting Table"
+				"1: Sapling"
+				"- (Save for Later Don't Break)"
+			]
+			icon: "minecraft:dead_bush"
+			id: "66B461268D304ADD"
+			size: 1.0d
+			tasks: [{
+				icon: "minecraft:dead_bush"
+				id: "05F5E994A6AADB5D"
+				observe_type: 0
+				timer: 0L
+				title: "Dead Bush"
+				to_observe: "minecraft:dead_bush"
+				type: "observation"
+			}]
+			title: "Dead Bush [&l&4READ QUEST&r]"
+			x: -22.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"35A7940BFFC6E33D"
+				"44E7C69C6BC48296"
+			]
+			description: ["This is my first tool..... oh no"]
+			id: "525886980CC24650"
+			size: 1.0d
+			tasks: [{
+				id: "42339E020804101F"
+				item: {
+					Count: 1
+					id: "gtceu:flisnt_knife"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 1.0f
+							AttackSpeed: 3.0f
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -20.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1EA467441DE65C0D"]
+			description: ["Strip Straw with a knife and you have \"string\""]
+			id: "34FB1FD1C7726DE6"
+			size: 1.0d
+			tasks: [{
+				id: "3EA81EC7D2D518A1"
+				item: "kubejs:plant_fibers"
+				type: "item"
+			}]
+			title: "Plant Fiber"
+			x: -18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11792AD3856CC11A"]
+			description: ["Scavenge through the coarse dirt for flint"]
+			id: "44E7C69C6BC48296"
+			size: 1.0d
+			tasks: [
+				{
+					id: "7619B1546F2F67A5"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					id: "04CDF9FFF0BEF10A"
+					item: "kubejs:flint_shard"
+					type: "item"
+				}
+			]
+			x: -22.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["66B461268D304ADD"]
+			description: ["You'll get 1-2 Sticks per dead bush, though again don't break them all"]
+			id: "35A7940BFFC6E33D"
+			size: 1.0d
+			tasks: [{
+				id: "345DFC3F759FEA02"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			x: -20.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"34FB1FD1C7726DE6"
+				"35A7940BFFC6E33D"
+				"44E7C69C6BC48296"
+			]
+			hide_dependency_lines: true
+			id: "469CAF0D80978B00"
+			size: 1.0d
+			tasks: [{
+				id: "16A68B55E3B9927B"
+				item: {
+					Count: 1
+					id: "gtceu:flisnt_axe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 3.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -16.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["469CAF0D80978B00"]
+			description: ["wdym I can't mine barked logs...."]
+			id: "7CF45E2FF79F0A97"
+			size: 1.0d
+			tasks: [{
+				id: "1D19FBA9060FB62D"
+				item: "minecraft:stripped_jungle_log"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"469CAF0D80978B00"
+				"525886980CC24650"
+				"5A4DF6397D7F2B78"
+			]
+			description: [
+				"Use the Wood Dust to get your first water."
+				""
+				"You'll need to hollow out a crucible log to get a crucible."
+				""
+				"Strip it, then hollow it out using: "
+				"Knife => Saw => Knife"
+				""
+				"&l&4LOOK AT THE TOP OF THE TREE"
+			]
+			hide_dependency_lines: true
+			id: "218CF08B9647CA00"
+			size: 1.0d
+			tasks: [{
+				icon: "exnihilosequentia:jungle_crucible"
+				id: "23995F033197FD73"
+				observe_type: 0
+				timer: 0L
+				title: "First Crucible"
+				to_observe: "exnihilosequentia:jungle_crucible"
+				type: "observation"
+			}]
+			title: "Man's First Hydration"
+			x: -8.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["469CAF0D80978B00"]
+			description: [""]
+			id: "2938B6A5159F3BE8"
+			size: 1.0d
+			tasks: [
+				{
+					id: "20050F92584F88C9"
+					item: "gtceu:sticky_resin"
+					type: "item"
+				}
+				{
+					id: "705E5736305A94CA"
+					item: "kubejs:bark"
+					type: "item"
+				}
+			]
+			title: "Bark 'n Sap"
+			x: -18.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5A3FCB5053FCD9C7"]
+			id: "24846DA25397B88E"
+			size: 1.0d
+			tasks: [{
+				id: "3EE0D008D9470156"
+				item: "minecraft:bowl"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"34FB1FD1C7726DE6"
+				"35A7940BFFC6E33D"
+				"44E7C69C6BC48296"
+			]
+			description: ["Hint: Always keep multiple of a tool on you so you don't need the emergency item"]
+			hide_dependency_lines: true
+			id: "5A4DF6397D7F2B78"
+			size: 1.0d
+			tasks: [{
+				id: "1236C30783F4224B"
+				item: {
+					Count: 1
+					id: "gtceu:flisnt_saw"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							HarvestIce: 1b
+						}
+						GT.Tool: {
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"5A4DF6397D7F2B78"
+				"7CF45E2FF79F0A97"
+			]
+			id: "5A3FCB5053FCD9C7"
+			size: 1.0d
+			tasks: [{
+				id: "27A72762F5BE6286"
+				item: "minecraft:jungle_planks"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"218CF08B9647CA00"
+				"24846DA25397B88E"
+			]
+			id: "1810B4921EB6640E"
+			size: 1.0d
+			tasks: [{
+				id: "0A09B3D78F8345BB"
+				item: "kubejs:water_bowl"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1810B4921EB6640E"]
+			description: ["Right Click a Dead Bush with a Water Bowl to re-animate it"]
+			id: "19FF06F95EF022C2"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "58878611FF188758"
+				item: "minecraft:jungle_sapling"
+				type: "item"
+			}]
+			title: "INFINITE WOOD"
+			x: -8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["525886980CC24650"]
+			description: ["Break Dead Bushes with a Knife to get this"]
+			id: "1EA467441DE65C0D"
+			size: 1.0d
+			tasks: [{
+				id: "7A38DE55016FE196"
+				item: "kubejs:straw"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1EA467441DE65C0D"]
+			id: "54CFAAE3EA5F56D0"
+			size: 1.0d
+			tasks: [{
+				id: "369BA93C99891009"
+				item: "kubejs:canvas"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"54CFAAE3EA5F56D0"
+				"5A4DF6397D7F2B78"
+				"7CF45E2FF79F0A97"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Interact with a stripped jungle log in the following:"
+				""
+				"Saw, Knife, Canvas, Flint"
+			]
+			id: "13F8BDB87F975319"
+			shape: "octagon"
+			size: 1.1d
+			tasks: [{
+				icon: "minecraft:crafting_table"
+				id: "70E29549D5B3A31D"
+				observe_type: 0
+				timer: 0L
+				title: "Crafting Table"
+				to_observe: "minecraft:crafting_table"
+				type: "observation"
+			}]
+			x: -16.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"70E29549D5B3A31D"
+				"13F8BDB87F975319"
+				"34FB1FD1C7726DE6"
+			]
+			id: "0A4DFA22DC756FA7"
+			size: 1.0d
+			tasks: [{
+				id: "1EEF962273949C5E"
+				item: "exnihilosequentia:string_mesh"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0A4DFA22DC756FA7"]
+			id: "1E9A3E0369CE7901"
+			size: 1.0d
+			tasks: [{
+				id: "028AEF0426599234"
+				item: "exnihilosequentia:jungle_sieve"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1E9A3E0369CE7901"]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "6131B93AB7C44162"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "183C7C42A6CF618F"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "INFINITE DIRT"
+			x: -18.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1E9A3E0369CE7901"]
+			id: "24B0865E6FC3EA96"
+			size: 1.0d
+			tasks: [{
+				id: "72CEAB3EE4041901"
+				item: "exnihilosequentia:stone_pebble"
+				type: "item"
+			}]
+			title: "Stones"
+			x: -16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24B0865E6FC3EA96"]
+			id: "184FE341A3AD7B1E"
+			size: 1.0d
+			tasks: [{
+				id: "0C90C853D7C6828D"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["184FE341A3AD7B1E"]
+			description: ["Break Cobblestone with a &o&7Hammer&r to break it down, keep on breaking it down if needed."]
+			id: "246E67D64A5EDF08"
+			size: 1.0d
+			tasks: [{
+				id: "4FD3AF06EDB6D228"
+				item: {
+					Count: 1
+					id: "gtceu:flisnt_hammer"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 5.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -16.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["345B75BF519B7702"]
+			id: "5D9CA9E8B676679A"
+			size: 1.0d
+			tasks: [{
+				id: "55D72686B7A434CD"
+				item: "exnihilosequentia:dust"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A3FCB5053FCD9C7"]
+			hide_dependent_lines: true
+			id: "5E775E21E5B0786F"
+			size: 1.0d
+			tasks: [{
+				id: "509611B6ACE4A311"
+				item: "gtceu:brick_wooden_form"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1810B4921EB6640E"]
+			description: ["Soaking Dirt with a Water Bowl might do something...."]
+			id: "0EF265815EB8F86F"
+			size: 1.0d
+			tasks: [{
+				id: "233B1E949FA8B230"
+				item: "minecraft:mud"
+				title: "Look at Mud"
+				type: "item"
+			}]
+			title: "Mud"
+			x: -12.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0EF265815EB8F86F"]
+			id: "341E2546D0BD5FAE"
+			size: 1.0d
+			tasks: [{
+				id: "391E5F3305BC4271"
+				item: "minecraft:packed_mud"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["341E2546D0BD5FAE"]
+			id: "75483607FCF1447A"
+			size: 1.0d
+			tasks: [{
+				id: "40872FAD78217A88"
+				item: "kubejs:packed_mud_ball"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"75483607FCF1447A"
+				"5E775E21E5B0786F"
+			]
+			id: "0E087C29644BA666"
+			size: 1.0d
+			tasks: [{
+				id: "70D4D844F36B4EFA"
+				item: "kubejs:mud_brick"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0FB21B977F0C0843"]
+			description: [
+				"Each Ore Chunk Smelts to 2 Nuggets"
+				""
+				"You Get Regular Crushed Ore from the Advanced Mesh \"Flint Mesh\""
+				""
+				"Tuff - Hematite"
+				"Granite - Cassiterite"
+				"Diorite - Chalcopyrite"
+				"Andesite - Sphalerite"
+				"Basalt - Pyrite"
+				"Blackstone - Magnetite"
+				"Deepslate - Galena"
+			]
+			id: "299F2383569EEFA4"
+			size: 1.0d
+			tasks: [
+				{
+					id: "4C8102F3CE4F6612"
+					item: "gtceu:stone_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4723E969B34065BE"
+					item: "kubejs:hematite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1D3535424E3C38F8"
+					item: "kubejs:cassiterite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CAE0DD28916DE29"
+					item: "kubejs:chalcopyrite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4ABCE5F5AD20E917"
+					item: "kubejs:sphalerite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "300A91B24919F142"
+					item: "kubejs:pyrite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "43EADF57FE324C9E"
+					item: "kubejs:magnetite_crushed_ore_chunk"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "24F40B7B951A45E1"
+					item: "kubejs:chalcocite_crushed_ore_chunk"
+					type: "item"
+				}
+			]
+			title: "Ore Chunks"
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1ABF4784F033D41A"
+				"4C8102F3CE4F6612"
+				"299F2383569EEFA4"
+			]
+			description: ["Consider using a Mortar on the Pebbles..."]
+			icon: "kubejs:concrete_bowl"
+			id: "7D83A21F7DB27B47"
+			size: 1.0d
+			tasks: [
+				{
+					id: "0622079B25F91B67"
+					item: "kubejs:concrete_bowl"
+					type: "item"
+				}
+				{
+					id: "7468F53D204B429F"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F550705B0576891"]
+			id: "41D300F6E11B1EA1"
+			rewards: [{
+				auto: "enabled"
+				command: "/playsound gtceu:sus master @a"
+				elevate_perms: true
+				icon: "ad_astra:cheese"
+				id: "53FF0F0E1BEE1B52"
+				silent: true
+				type: "command"
+			}]
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "1365D05A7F5E99A7"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"299F2383569EEFA4"
+				"41D300F6E11B1EA1"
+			]
+			description: [""]
+			id: "3DCE9199510A9223"
+			rewards: [{
+				id: "6049B8EBEA1575C9"
+				item: {
+					Count: 1
+					id: "kubejs:basic_scavenging_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					id: "44F5A40D6C659DD6"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "6D575D96A00D7AF7"
+					item: "gtceu:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "26DC6AC3E19E3BC4"
+					item: "gtceu:tin_nugget"
+					type: "item"
+				}
+				{
+					id: "5A95188DEE55BA61"
+					item: "gtceu:zinc_nugget"
+					type: "item"
+				}
+				{
+					id: "73624961FDF25DA8"
+					item: "gtceu:lead_nugget"
+					type: "item"
+				}
+			]
+			title: "Metal Nuggets"
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5755D1A5F9E1F544"]
+			description: [""]
+			icon: "kubejs:reinforced_stone_bricks"
+			id: "3D9B291441B63F78"
+			size: 1.0d
+			tasks: [
+				{
+					id: "1193E8818272A1E4"
+					item: "kubejs:reinforced_stone_bricks"
+					type: "item"
+				}
+				{
+					id: "61D1A7B31ABFA163"
+					item: "kubejs:stone_brick"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0E087C29644BA666"]
+			id: "629BDB317D0A8DD3"
+			size: 1.0d
+			tasks: [{
+				id: "0BFDFEABEECAA5C8"
+				item: "minecraft:mud_bricks"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["13F8BDB87F975319"]
+			description: ["Makes leaves drop more saplings"]
+			id: "396FCF5D31059F6B"
+			size: 1.0d
+			tasks: [{
+				id: "3F3DDF6A82667C00"
+				item: {
+					Count: 1
+					id: "exnihilosequentia:wooden_crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Easier Saplings"
+			x: -15.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["396FCF5D31059F6B"]
+			description: ["Its.... food?"]
+			id: "2A70451774756418"
+			size: 1.0d
+			tasks: [{
+				id: "006E18BC1884B2C9"
+				item: "minecraft:cocoa_beans"
+				type: "item"
+			}]
+			title: "Nom Nom"
+			x: -15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6AEAD96B7394C208"]
+			id: "0FB21B977F0C0843"
+			size: 1.0d
+			tasks: [
+				{
+					id: "11D92B8EC3DB00DA"
+					item: "exnihilosequentia:crushed_andesite"
+					type: "item"
+				}
+				{
+					id: "1A080BF89F95269C"
+					item: "exnihilosequentia:crushed_basalt"
+					type: "item"
+				}
+				{
+					id: "471C883B82A4392F"
+					item: "exnihilosequentia:crushed_blackstone"
+					type: "item"
+				}
+				{
+					id: "08796F4823E5981B"
+					item: "exnihilosequentia:crushed_deepslate"
+					type: "item"
+				}
+				{
+					id: "03EEE4C76F72A634"
+					item: "exnihilosequentia:crushed_diorite"
+					type: "item"
+				}
+				{
+					id: "118FC126616B112B"
+					item: "exnihilosequentia:crushed_granite"
+					type: "item"
+				}
+				{
+					id: "523266AA9CCC3E76"
+					item: "exnihilosequentia:crushed_tuff"
+					type: "item"
+				}
+			]
+			title: "Metal Rich Stones"
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["19A933EA1C10EED4"]
+			id: "6AEAD96B7394C208"
+			size: 1.0d
+			tasks: [
+				{
+					id: "5BDDB61A589EB9A6"
+					item: "exnihilosequentia:andesite_pebble"
+					type: "item"
+				}
+				{
+					id: "68521BBC03E054FC"
+					item: "exnihilosequentia:basalt_pebble"
+					type: "item"
+				}
+				{
+					id: "55D3D8113887A1B3"
+					item: "exnihilosequentia:blackstone_pebble"
+					type: "item"
+				}
+				{
+					id: "101703151CA0549D"
+					item: "exnihilosequentia:deepslate_pebble"
+					type: "item"
+				}
+				{
+					id: "1983C1CF22574394"
+					item: "exnihilosequentia:diorite_pebble"
+					type: "item"
+				}
+				{
+					id: "4C1EEFA55F8CEF2A"
+					item: "exnihilosequentia:granite_pebble"
+					type: "item"
+				}
+				{
+					id: "0F3E7F249456B11E"
+					item: "exnihilosequentia:tuff_pebble"
+					type: "item"
+				}
+			]
+			title: "Many Stones"
+			x: -15.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["246E67D64A5EDF08"]
+			id: "19A933EA1C10EED4"
+			size: 1.0d
+			tasks: [{
+				id: "01140EA833CE4843"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["19A933EA1C10EED4"]
+			id: "345B75BF519B7702"
+			size: 1.0d
+			tasks: [{
+				id: "740013EA47F8ECDF"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["345B75BF519B7702"]
+			id: "34F1552CD16AC064"
+			size: 1.0d
+			tasks: [
+				{
+					id: "2F95AF852458CD6C"
+					item: "exnihilosequentia:calcite_pebble"
+					type: "item"
+				}
+				{
+					id: "156A1FFA39BEE242"
+					item: "exnihilosequentia:dripstone_pebble"
+					type: "item"
+				}
+			]
+			title: "Even More Stones"
+			x: -14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["34F1552CD16AC064"]
+			id: "70B01D7A03E73691"
+			size: 1.0d
+			tasks: [
+				{
+					id: "469D6B4C1755144A"
+					item: "exnihilosequentia:crushed_calcite"
+					type: "item"
+				}
+				{
+					id: "76D3DECBEC3B7CA3"
+					item: "exnihilosequentia:crushed_dripstone"
+					type: "item"
+				}
+			]
+			title: "Sediment Rich Stones"
+			x: -12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["70B01D7A03E73691"]
+			id: "1ABF4784F033D41A"
+			size: 1.0d
+			tasks: [
+				{
+					id: "6C6F7E831213A517"
+					item: "gtceu:small_calcite_dust"
+					type: "item"
+				}
+				{
+					id: "1EE07BE5F12EBCDB"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					id: "3C6BA2B2D58D1D81"
+					item: "gtceu:small_gypsum_dust"
+					type: "item"
+				}
+				{
+					id: "5EC4915CDF7A2DC1"
+					item: "gtceu:tiny_sulfur_dust"
+					type: "item"
+				}
+			]
+			title: "Sediments"
+			x: -10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2CE500506AE84E1A"]
+			id: "1472BFF306FEA342"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "7525762D9BF50AB0"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Ultra Primitive Alloy"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D9B291441B63F78"]
+			description: [""]
+			id: "2CE500506AE84E1A"
+			shape: "octagon"
+			size: 1.1d
+			tasks: [{
+				id: "2EECC19B0000F0AF"
+				item: "gtceu:rugged_alloyer"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2CE500506AE84E1A"]
+			description: ["By using 2 Chunks and a Nugget you can make ingots resulting in 4 nuggets per chunk rather than 2. A whole &l&n2x&r efficiency."]
+			id: "67D37BA6B5424768"
+			size: 1.0d
+			tasks: [
+				{
+					id: "021F43652BC498B1"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "083DBA2F192B30A2"
+					item: "minecraft:copper_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "24373FC3CD5952E9"
+					item: "gtceu:tin_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "26015FA48220AAEC"
+					item: "gtceu:zinc_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BFFAD60CF6EBEB4"
+					item: "gtceu:lead_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Easier Ingots"
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3DCE9199510A9223"]
+			description: ["With this you can scavenge for Flint easier"]
+			id: "0B617DF410FA70C2"
+			optional: true
+			size: 1.0d
+			tasks: [{
+				id: "0F1213DC07CB4666"
+				item: {
+					Count: 1
+					id: "kubejs:basic_scavenging_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"629BDB317D0A8DD3"
+				"184FE341A3AD7B1E"
+			]
+			id: "19A0099F62CB5FF1"
+			shape: "octagon"
+			size: 1.1d
+			tasks: [{
+				id: "7857081A11752D48"
+				item: "gtceu:kiln"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"19A0099F62CB5FF1"
+				"0D24BB28465CF80B"
+				"7D83A21F7DB27B47"
+			]
+			id: "4F550705B0576891"
+			size: 1.0d
+			tasks: [
+				{
+					id: "22E9245155A65068"
+					item: "minecraft:brick"
+					type: "item"
+				}
+				{
+					id: "159EE43DF60487C7"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"41EEEE63FF53A037"
+				"5E775E21E5B0786F"
+			]
+			id: "0D24BB28465CF80B"
+			size: 1.0d
+			tasks: [{
+				id: "00BEB7BDA2166E8C"
+				item: "gtceu:compressed_clay"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1810B4921EB6640E"
+				"55D72686B7A434CD"
+			]
+			description: ["Soaking Dust with a Water Bowl might do something...."]
+			id: "08B170E72119FDD4"
+			optional: true
+			size: 1.0d
+			tasks: [{
+				icon: "minecraft:clay"
+				id: "08FC85C10B6D55A6"
+				observe_type: 0
+				timer: 0L
+				title: "Look at Clay"
+				to_observe: "minecraft:clay"
+				type: "observation"
+			}]
+			title: "Clay"
+			x: -10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"08B170E72119FDD4"
+				"1EE07BE5F12EBCDB"
+			]
+			dependency_requirement: "one_completed"
+			id: "41EEEE63FF53A037"
+			size: 1.0d
+			tasks: [{
+				id: "413FE2574EC05D26"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5E775E21E5B0786F"]
+			icon: "create:experience_nugget"
+			id: "161BB5993F1F9A4E"
+			optional: true
+			rewards: [{
+				id: "05A1464F28DD370A"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			shape: "none"
+			size: 0.25d
+			tasks: [{
+				id: "31F58678CDE07604"
+				title: "Haha made you look"
+				type: "checkmark"
+			}]
+			x: 186.0d
+			y: -104.0d
+		}
+		{
+			dependencies: ["5D9CA9E8B676679A"]
+			id: "156D0D972FA26C9C"
+			tasks: [
+				{
+					id: "583404ADB1F35AB9"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "1110B9281CCCCD3E"
+					item: "gtceu:quartzite_gem"
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DCE9199510A9223"]
+			id: "5755D1A5F9E1F544"
+			tasks: [{
+				id: "57426CD665EF7E6F"
+				item: {
+					Count: 1
+					id: "gtceu:iron_file"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 255
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3DCE9199510A9223"]
+			description: ["With this you can scavenge for Flint MUCH easier"]
+			hide_dependent_lines: true
+			id: "24AB0C2B43C66BD3"
+			optional: true
+			size: 1.0d
+			tasks: [{
+				id: "7830D9C3BA4CA396"
+				item: {
+					Count: 1
+					id: "kubejs:scavenging_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3DCE9199510A9223"]
+			id: "7278842A97B2E64A"
+			size: 1.0d
+			tasks: [{
+				id: "4D6C7C79E40F95A3"
+				item: {
+					Count: 1
+					id: "exnihilosequentia:iron_crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DCE9199510A9223"]
+			dependency_requirement: "one_completed"
+			id: "4F89E871129D842B"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "2A451602F9C9B9AE"
+				item: {
+					Count: 1
+					id: "gtceu:iron_mortar"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							MaxDamage: 255
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+	]
+	title: "A Descent into Madness"
+}

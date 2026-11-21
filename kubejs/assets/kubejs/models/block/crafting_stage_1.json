@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"particle": "minecraft:block/stripped_jungle_log_top",
+		"down": "kubejs:block/hardmode/crafting_bottom",
+		"up": "kubejs:block/hardmode/crafting_1_top",
+		"north": "kubejs:block/hardmode/crafting_1_side",
+		"east": "kubejs:block/hardmode/crafting_1_side",
+		"south": "kubejs:block/hardmode/crafting_1_side",
+		"west": "kubejs:block/hardmode/crafting_1_side"
+	}
+}

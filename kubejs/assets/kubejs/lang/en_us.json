@@ -1,0 +1,142 @@
+{
+    "death.attack.radiation": "%s was irradiated to death",
+
+    "effect.kubejs.radiation_poisoning": "Radiation Poisoning",
+    "effect.kubejs.uranium_fever": "Uranium Fever",
+
+    "effects.radiation.message": "§cYou feel sick from radiation...",
+    "effects.uranium_fever.message": "§aUranium Fever §fHas Done and Got You Down...",
+
+    "item.kubejs.compressed_mycelium": "Compressed Mycelium",
+    "item.kubejs.smoked_mycelium": "Smoked Mycelium",
+    "item.kubejs.mycelium_growth": "Mycelium Growth",
+
+    "item.kubejs.flint_shard": "Flint Shard",
+    "item.kubejs.plant_fibers": "Plant Fibers",
+    "item.kubejs.packed_mud_ball": "Packed Mud Ball",
+    "item.kubejs.mud_brick": "Packed Mud Brick",
+    "item.kubejs.stone_brick": "Stone Brick",
+    "item.kubejs.charcoal_pellet": "Charcoal Pellet",
+    "item.kubejs.water_bowl": "Water Bowl",
+
+    "item.kubejs.incomplete_long_rod": "Incomplete Long Rod",
+    "item.kubejs.incomplete_double_plate": "Incomplete Double Plate",
+    "item.kubejs.incomplete_gear": "Incomplete Gear",
+    "item.kubejs.incomplete_small_gear": "Incomplete Small Gear",
+    "item.kubejs.incomplete_rotor": "Incomplete Rotor",
+    "item.kubejs.incomplete_spring": "Incomplete Spring",
+    "item.kubejs.incomplete_small_spring": "Incomplete Small Spring",
+    "item.kubejs.incomplete_single_wire": "Incomplete Single Wire",
+    "item.kubejs.incomplete_fine_wire": "Incomplete Fine Wire",
+    "item.kubejs.incomplete_fluid_pipe": "Incomplete Fluid Pipe",
+    "item.kubejs.incomplete_item_pipe": "Incomplete Item Pipe",
+
+    "item.kubejs.basic_scavenging_rod": "Basic Scavenging Rod",
+    "item.kubejs.scavenging_rod": "Scavenging Rod",
+
+    "item.kubejs.ulv_electric_motor": "ULV Electric Motor",
+    "item.kubejs.ulv_electric_pump": "ULV Electric Pump",
+    "item.kubejs.ulv_conveyor_module": "ULV Conveyor Module",
+    "item.kubejs.ulv_robot_arm": "ULV Robot Arm",
+    "item.kubejs.ulv_electric_piston": "ULV Electric Piston",
+    "item.kubejs.ulv_emitter": "ULV Emitter",
+
+    "item.kubejs.unfired_ingot_ceramic_casting_mold": "Unfired Ingot Ceramic Casting Mold",
+    "item.kubejs.unfired_ball_ceramic_casting_mold": "Unfired Ball Ceramic Casting Mold",
+    "item.kubejs.unfired_raw_ceramic_casting_mold": "Unfired Raw Ceramic Casting Mold",
+    "item.kubejs.ingot_ceramic_casting_mold": "Ingot Ceramic Casting Mold",
+    "item.kubejs.ball_ceramic_casting_mold": "Ball Ceramic Casting Mold",
+
+    "block.kubejs.reinforced_stone_bricks": "Reinforced Stone Bricks",
+    "block.kubejs.high_steam_machine_casing": "Sturdy Steam Machine Casing",
+
+    "block.kubejs.crucible_stage_0": "Crucible Log",
+    "block.kubejs.crucible_stage_1": "Stripped Crucible Log",
+    "block.kubejs.crucible_stage_2": "Hollowed Crucible Log",
+    "block.kubejs.crucible_stage_3": "Almost a Crucible",
+
+    "block.kubejs.crafting_stage_1": "Shaped Stripped Log",
+    "block.kubejs.crafting_stage_2": "Partially Carved Crafting Table",
+    "block.kubejs.crafting_stage_3": "Uncovered Crafting Table",
+
+    "block.kubejs.peek_casing": "PEEK Casing",
+
+    "block.kubejs.pallaridium_turbine_casing": "Pallaridium Turbine Casing",
+    "block.kubejs.pallaridium_pipe_casing": "Pallaridium Pipe Casing",
+    "block.kubejs.pallaridium_gearbox": "Pallaridium Gearbox Casing",
+    "block.kubejs.pallaridium_firebox_casing": "Pallaridium Firebox Casing",
+    "block.kubejs.pallaridium_engine_intake_casing": "Unreal Engine Intake Casing",
+    "block.kubejs.pallaridium_heat_escape_casing": "Pallaridium Heat Escape Casing",
+
+    "block.kubejs.enriched_naquadah_machine_casing": "Reinforced Enriched Naquadah Machine Casing",
+    "block.kubejs.enriched_naquadah_turbine_casing": "Enriched Naquadah Turbine Casing",
+    "block.kubejs.enriched_naquadah_pipe_casing": "Enriched Naquadah Pipe Casing",
+    "block.kubejs.enriched_naquadah_gearbox": "Enriched Naquadah Gearbox Casing",
+    "block.kubejs.enriched_naquadah_firebox_casing": "Enriched Naquadah Firebox Casing",
+    "block.kubejs.enriched_naquadah_engine_intake_casing": "Supreme Engine Intake Casing",
+    "block.kubejs.enriched_naquadah_heat_escape_casing": "Enriched Naquadah Heat Escape Casing",
+
+    "block.kubejs.meshblock": "Treated Wood Reinforced Mesh",
+
+    "block.kubejs.polycarbonate_casing": "Polycarbonate Casing",
+    "block.kubejs.beryllium_aluminium_alloy_casing": "Beryllium-Aluminium Casing",
+    "block.kubejs.birmabright_casing": "Birmabright Casing",
+    "block.kubejs.beryllium_bronze_casing": "Beryllium Bronze Casing",
+    "block.kubejs.blue_steel_casing": "Blue Steel Casing",
+    "block.kubejs.duralumin_casing": "Duralumin Casing",
+    "block.kubejs.elgiloy_casing": "Elgiloy Casing",
+    "block.kubejs.hydronalium_casing": "Hydronalium Casing",
+    "block.kubejs.kovar_casing": "Kovar Casing",
+    "block.kubejs.red_steel_casing": "Red Steel Casing",
+    "block.kubejs.silicon_bronze_casing": "Silicon Bronze Casing",
+    "block.kubejs.sterling_silver_casing": "Sterling Silver Casing",
+    "block.kubejs.zamak_casing": "Zamak Casing",
+    "block.kubejs.tumbaga_casing": "Tumbaga Casing",
+    "block.kubejs.silicone_rubber_casing": "Silicone Rubber Casing",
+
+    "block.kubejs.black_steel_casing": "Black Steel Casing",
+    "block.kubejs.manganin_casing": "Manganin Casing",
+    "block.kubejs.galvanized_steel_casing": "Galvanized Steel Casing",
+
+    "item.kubejs.consume.tooltip": "§8Nom Nom?",
+    "item.kubejs.nuclear_rod_composition.tooltip": "§7Nuclear Rod Composition:",
+
+    "item.kubejs.thr_fuel_rod": "THR Fuel Rod",
+    "item.kubejs.leu238_fuel_rod": "LEU-238 Fuel Rod",
+    "item.kubejs.heu_fuel_rod": "HEU Fuel Rod",
+    "item.kubejs.plu_fuel_rod": "PLU Fuel Rod",
+    "item.kubejs.mox239_fuel_rod": "MOX-239 Fuel Rod",
+    "item.kubejs.amr_fuel_rod": "AMR Fuel Rod",
+    "item.kubejs.nep_fuel_rod": "NEP Fuel Rod",
+    "item.kubejs.crm_fuel_rod": "CRM Fuel Rod",
+    "item.kubejs.mox241_fuel_rod": "MOX-241 Fuel Rod",
+    "item.kubejs.tpu_fuel_rod": "TPU Fuel Rod",
+    "item.kubejs.mox238_fuel_rod": "MOX-238 Fuel Rod",
+    "item.kubejs.caf_fuel_rod": "CAF Fuel Rod",
+    "item.kubejs.etu_fuel_rod": "ETU Fuel Rod",
+    "item.kubejs.leu233_fuel_rod": "LEU-233 Fuel Rod",
+    "item.kubejs.nqe_fuel_rod": "NQE Fuel Rod",
+
+    "item.kubejs.depleted_thr_fuel_rod": "Depleted THR Fuel Rod",
+    "item.kubejs.depleted_leu238_fuel_rod": "Depleted LEU-238 Fuel Rod",
+    "item.kubejs.depleted_heu_fuel_rod": "Depleted HEU Fuel Rod",
+    "item.kubejs.depleted_plu_fuel_rod": "Depleted PLU Fuel Rod",
+    "item.kubejs.depleted_mox239_fuel_rod": "Depleted MOX-239 Fuel Rod",
+    "item.kubejs.depleted_amr_fuel_rod": "Depleted AMR Fuel Rod",
+    "item.kubejs.depleted_nep_fuel_rod": "Depleted NEP Fuel Rod",
+    "item.kubejs.depleted_crm_fuel_rod": "Depleted CRM Fuel Rod",
+    "item.kubejs.depleted_mox241_fuel_rod": "Depleted MOX-241 Fuel Rod",
+    "item.kubejs.depleted_tpu_fuel_rod": "Depleted TPU Fuel Rod",
+    "item.kubejs.depleted_mox238_fuel_rod": "Depleted MOX-238 Fuel Rod",
+    "item.kubejs.depleted_caf_fuel_rod": "Depleted CAF Fuel Rod",
+    "item.kubejs.depleted_etu_fuel_rod": "Depleted ETU Fuel Rod",
+    "item.kubejs.depleted_leu233_fuel_rod": "Depleted LEU-233 Fuel Rod",
+    "item.kubejs.depleted_nqe_fuel_rod": "Depleted NQE Fuel Rod",
+    
+    "block.kubejs.abyssal_alloy_coil_block": "Abyssal Alloy Coil Block",
+
+    "item.kubejs.moss_ball": "Moss Ball",
+
+    "item.kubejs.concrete_bowl": "Concrete Bowl"
+
+}
