@@ -24,7 +24,7 @@
 		{
 			dependencies: [
 				"2A7C8C43D6D58B93"
-				"2B99C65945F68A8E"
+				"410385DA7FBBD2FA"
 			]
 			hide_dependent_lines: true
 			id: "3A3BD0ECA7FC8D38"
@@ -37,39 +37,6 @@
 			}]
 			x: -5.5d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"6DE87A8D59525AF8"
-				"19EFB33C0B250C49"
-				"6B9955C330297628"
-				"5C764F939DCEA2B4"
-			]
-			id: "4D8EFEA7036CD327"
-			size: 1.0d
-			tasks: [{
-				id: "4CF937E4CBAC2F33"
-				item: "gtceu:ulv_assembler"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"3A3BD0ECA7FC8D38"
-				"0D18A28F0FF10EEA"
-			]
-			hide_dependent_lines: true
-			id: "19EFB33C0B250C49"
-			size: 1.0d
-			tasks: [{
-				id: "32D88E8FC3C80D46"
-				item: "gtceu:vacuum_tube"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -96,44 +63,26 @@
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["6974D4ADDEA9535F"]
-			hide_dependent_lines: true
-			id: "301FF7F900A30DC7"
-			shape: "gear"
-			size: 1.0d
-			tasks: [{
-				id: "1F3A1E1E31137FF3"
-				item: "gtceu:steel_ingot"
-				type: "item"
-			}]
-			x: -1.5d
+			x: -3.5d
 			y: 11.0d
 		}
 		{
 			dependencies: [
-				"5F808C6A353FF66D"
-				"0C3E73B7FB53E836"
-				"6C9CBCF4C1B1495E"
-				"5646A9F01BD60975"
 				"59A805C314717BA0"
+				"6F1BB9A99918F256"
 			]
-			hide_dependent_lines: true
 			id: "410385DA7FBBD2FA"
 			size: 1.0d
 			tasks: [{
 				id: "4ED9190E6464114C"
-				item: "gtceu:cast_iron_ingot"
+				item: "gtceu:gray_iron_ingot"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.0d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["410385DA7FBBD2FA"]
+			dependencies: ["6E4E66851C359241"]
 			id: "0091DD5DAE9FDF9C"
 			size: 1.0d
 			tasks: [{
@@ -143,22 +92,6 @@
 			}]
 			x: -11.5d
 			y: -1.0d
-		}
-		{
-			dependencies: [
-				"4D8EFEA7036CD327"
-				"08085ED3830FD51A"
-				"61140FF544151BF8"
-			]
-			id: "6974D4ADDEA9535F"
-			size: 1.0d
-			tasks: [{
-				id: "4383F7EF20E0579D"
-				item: "gtceu:reinforced_blast_furnace"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 9.0d
 		}
 		{
 			dependencies: ["50F2743FA699173A"]
@@ -194,23 +127,6 @@
 			title: "Low Pressure Steam Machines"
 			x: -9.5d
 			y: -5.0d
-		}
-		{
-			dependencies: [
-				"3A3BD0ECA7FC8D38"
-				"291A793E984F63CC"
-			]
-			description: [""]
-			hide_dependent_lines: true
-			id: "6DE87A8D59525AF8"
-			size: 1.0d
-			tasks: [{
-				id: "6363D1A6B51733E1"
-				item: "gtceu:ulv_machine_hull"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -301,26 +217,9 @@
 		}
 		{
 			dependencies: [
-				"5F808C6A353FF66D"
-				"3A3BD0ECA7FC8D38"
-			]
-			hide_dependency_lines: true
-			id: "08085ED3830FD51A"
-			size: 1.0d
-			tasks: [{
-				id: "5478932200A4B3A0"
-				item: "dustrial_decor:cinder_block"
-				type: "item"
-			}]
-			title: "Cinder Block"
-			x: -3.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"410385DA7FBBD2FA"
 				"40B1212619EC3444"
 				"59A805C314717BA0"
+				"3235C80BA953B772"
 			]
 			id: "4FB04EF25E12F5FA"
 			optional: true
@@ -347,10 +246,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"410385DA7FBBD2FA"
-				"40B1212619EC3444"
-			]
+			dependencies: ["40B1212619EC3444"]
 			hide_dependent_lines: true
 			id: "43A9AA9BB750AEA2"
 			size: 1.0d
@@ -407,49 +303,10 @@
 			y: 1.0d
 		}
 		{
-			id: "55B15054D3B78F2E"
-			size: 1.0d
-			tasks: [{
-				id: "09B590B1E7871E88"
-				item: "gtceu:coke_gem"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 11.0d
-		}
-		{
-			dependencies: [
-				"5F808C6A353FF66D"
-				"6F1BB9A99918F256"
-				"6C9CBCF4C1B1495E"
-			]
-			id: "2B99C65945F68A8E"
-			size: 1.0d
-			tasks: [{
-				id: "0D269DA8460A2EC5"
-				item: "gtceu:crude_wrought_iron_ingot"
-				type: "item"
-			}]
-			x: -5.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4D8EFEA7036CD327"]
-			hide_dependency_lines: true
-			id: "034AF491BE41733E"
-			size: 1.0d
-			tasks: [{
-				id: "70855194851E994A"
-				item: "gtceu:ulv_energy_input_hatch"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 9.0d
-		}
-		{
 			dependencies: [
 				"5F808C6A353FF66D"
 				"6C9CBCF4C1B1495E"
+				"1152148CB39D8A2B"
 			]
 			hide_dependent_lines: true
 			id: "291A793E984F63CC"
@@ -461,80 +318,6 @@
 			}]
 			x: -1.5d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"6DE87A8D59525AF8"
-				"19EFB33C0B250C49"
-				"564F7A288EB2721A"
-			]
-			hide_dependency_lines: true
-			id: "218ACEFEBECC31E9"
-			size: 1.0d
-			tasks: [{
-				id: "4FE5C0795441914F"
-				item: "gtceu:ulv_centrifuge"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 11.0d
-		}
-		{
-			dependencies: [
-				"6DE87A8D59525AF8"
-				"19EFB33C0B250C49"
-				"564F7A288EB2721A"
-			]
-			id: "6D3BDC88ECCD072F"
-			size: 1.0d
-			tasks: [{
-				id: "0F172FC1CEF90195"
-				item: "gtceu:ulv_mixer"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"4D8EFEA7036CD327"
-				"624C1E0FD86FD884"
-			]
-			id: "0A8FE243A5A8CC64"
-			size: 1.0d
-			tasks: [{
-				id: "40B58D588DDC69D5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"ULV Machine Ports\"}"
-						}
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ulv_output_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ulv_input_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ulv_output_bus"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ulv_input_bus"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -552,52 +335,6 @@
 			}]
 			x: 6.5d
 			y: 3.0d
-		}
-		{
-			dependencies: [
-				"19EFB33C0B250C49"
-				"3A1AE7329B090F5C"
-				"1B5EA867C67903E4"
-			]
-			hide_dependency_lines: true
-			id: "199D5FCFC471FE62"
-			size: 1.0d
-			tasks: [{
-				id: "3EDCECC6DB1D4922"
-				item: "gtceu:large_barrel"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"19EFB33C0B250C49"
-				"3A1AE7329B090F5C"
-				"301FF7F900A30DC7"
-			]
-			hide_dependency_lines: true
-			id: "3A776D5D86EF8068"
-			size: 1.0d
-			tasks: [{
-				id: "67A775B8782E610E"
-				item: "gtceu:large_stone_barrel"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["218ACEFEBECC31E9"]
-			id: "624C1E0FD86FD884"
-			size: 1.0d
-			tasks: [{
-				id: "649B66780F14B927"
-				item: "gtceu:glue_bucket"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -634,86 +371,6 @@
 			}]
 			x: 6.5d
 			y: 7.0d
-		}
-		{
-			id: "3554A7293C94B319"
-			size: 1.0d
-			tasks: [{
-				id: "576CAE1BCF2A5FA5"
-				item: "gtceu:magnetic_iron_rod"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"3554A7293C94B319"
-				"3149BE5A8D986443"
-				"291A793E984F63CC"
-			]
-			id: "564F7A288EB2721A"
-			size: 1.0d
-			tasks: [{
-				id: "38BC4EA451C41CE0"
-				item: "gtceu:ulv_electric_motor"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["564F7A288EB2721A"]
-			id: "5440E2ACE3CF6074"
-			size: 1.0d
-			tasks: [{
-				id: "091BD84104A998E1"
-				item: "gtceu:ulv_electric_piston"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"5440E2ACE3CF6074"
-				"19EFB33C0B250C49"
-			]
-			id: "6B9955C330297628"
-			size: 1.0d
-			tasks: [{
-				id: "393D0A487F91C248"
-				item: "gtceu:ulv_robot_arm"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["564F7A288EB2721A"]
-			hide_dependent_lines: true
-			id: "5C764F939DCEA2B4"
-			size: 1.0d
-			tasks: [{
-				id: "435E57CA9311CA45"
-				item: "gtceu:ulv_conveyor_module"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["564F7A288EB2721A"]
-			hide_dependency_lines: true
-			id: "3A1AE7329B090F5C"
-			size: 1.0d
-			tasks: [{
-				id: "7775EE48F15EDE56"
-				item: "gtceu:ulv_electric_pump"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -760,21 +417,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"5F808C6A353FF66D"
-				"6C9CBCF4C1B1495E"
-			]
-			id: "0D18A28F0FF10EEA"
-			size: 1.0d
-			tasks: [{
-				id: "7D484CD92890FC7E"
-				item: "gtceu:glass_tube"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 1.0d
-		}
-		{
 			dependencies: ["2A7C8C43D6D58B93"]
 			hide_dependent_lines: true
 			id: "3149BE5A8D986443"
@@ -786,37 +428,6 @@
 			}]
 			x: -7.5d
 			y: -5.0d
-		}
-		{
-			dependencies: [
-				"6F1BB9A99918F256"
-				"2A7C8C43D6D58B93"
-				"70AF86B4A0D6A158"
-			]
-			id: "0C3E73B7FB53E836"
-			size: 1.0d
-			tasks: [{
-				id: "23588B712DD54F12"
-				item: "gtceu:crude_cast_iron_ingot"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"6DE87A8D59525AF8"
-				"19EFB33C0B250C49"
-			]
-			id: "105C5A7E95B3E6D4"
-			size: 1.0d
-			tasks: [{
-				id: "6B3183CCF11947F9"
-				item: "gtceu:ulv_stirling_generator"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -880,7 +491,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["55B15054D3B78F2E"]
 			id: "3AE5C6DB766D52B9"
 			size: 1.0d
 			tasks: [{
@@ -892,7 +502,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["55B15054D3B78F2E"]
 			id: "21931BF870070ABA"
 			size: 1.0d
 			tasks: [{
@@ -931,7 +540,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["301FF7F900A30DC7"]
+			dependencies: ["3235C80BA953B772"]
 			id: "11B71B1B4A0E43A1"
 			size: 1.0d
 			tasks: [{
@@ -978,7 +587,6 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["199D5FCFC471FE62"]
 			id: "337B21F9500DD0F1"
 			size: 1.0d
 			tasks: [{
@@ -1065,22 +673,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"410385DA7FBBD2FA"
-				"3A3BD0ECA7FC8D38"
-				"3149BE5A8D986443"
-			]
-			id: "61140FF544151BF8"
-			size: 1.0d
-			tasks: [{
-				id: "547E7975CC842752"
-				item: "gtceu:steeled_blast_furnace"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 9.0d
-		}
-		{
 			id: "01FA401E48C3B4A6"
 			tasks: [{
 				id: "663FB41CADE5326E"
@@ -1144,9 +736,9 @@
 		}
 		{
 			dependencies: [
-				"70AF86B4A0D6A158"
-				"5819AF3E6CCDB826"
 				"6994BA308DC55ED2"
+				"35B59AB143CA74BE"
+				"5819AF3E6CCDB826"
 			]
 			id: "7AEEC6EBE84BF5AB"
 			size: 1.0d
@@ -1155,8 +747,8 @@
 				item: "gtceu:pig_iron_dust"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -4.0d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1170,8 +762,8 @@
 				item: "gtceu:pig_iron_ingot"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.0d
+			x: -3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3981680ED3257E25"]
@@ -1185,6 +777,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["6E4E66851C359241"]
 			id: "13E13EF9C548450F"
 			tasks: [{
 				id: "26A8719CE7C4042E"
@@ -1195,7 +788,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["684FAA520167CC51"]
+			dependencies: [
+				"684FAA520167CC51"
+				"0256AB9765E794B8"
+			]
 			description: [""]
 			id: "0B6C67757BB838D3"
 			size: 1.0d
@@ -1208,41 +804,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4002DDFC6025B01D"]
-			hide_dependency_lines: true
-			id: "7A78D44724FA26EF"
-			size: 1.0d
-			tasks: [{
-				id: "146136D6C1020B2C"
-				item: "create:electron_tube"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"6994BA308DC55ED2"
-				"2938B6A5159F3BE8"
-			]
-			id: "28E0F28EA85F8847"
-			size: 1.0d
-			tasks: [{
-				id: "4FC1480196E70E2E"
-				item: {
-					Count: 1
-					id: "create:sand_paper"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Polishing"
-			x: -8.0d
-			y: 4.5d
-		}
-		{
+			dependencies: ["5D4A42635E4A3E54"]
 			id: "3981680ED3257E25"
 			tasks: [{
 				id: "0F0E98D3C3F6E272"
@@ -1251,6 +813,116 @@
 			}]
 			x: -11.0d
 			y: -8.0d
+		}
+		{
+			dependencies: [
+				"410385DA7FBBD2FA"
+				"63D792EF5D75290F"
+			]
+			id: "6E4E66851C359241"
+			tasks: [{
+				id: "7E3F5CA5DE80F3A9"
+				item: "gtceu:nickeled_gray_iron_ingot"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4A9BD3945A0A1E9D"]
+			id: "3235C80BA953B772"
+			tasks: [{
+				id: "56A6481C540DF6B9"
+				item: "kubejs:primitive_heat_escape_casing"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["13E13EF9C548450F"]
+			id: "4A9BD3945A0A1E9D"
+			tasks: [{
+				id: "763A27CFA0B6885F"
+				item: "gtceu:steam_assembler"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 7.5d
+		}
+		{
+			id: "63D792EF5D75290F"
+			size: 1.0d
+			tasks: [{
+				id: "1990722E39FEE28B"
+				item: "gtceu:nickel_ingot"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -2.5d
+		}
+		{
+			id: "5D4A42635E4A3E54"
+			tasks: [{
+				id: "43D36568F62A5F40"
+				item: "gtceu:lead_ingot"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -8.0d
+		}
+		{
+			id: "21563799A48F1915"
+			size: 1.0d
+			tasks: [{
+				id: "069C0164DCC7CA77"
+				item: "gtceu:gold_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "0256AB9765E794B8"
+			tasks: [{
+				id: "465C4998259C2B23"
+				item: "gtceu:silver_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21563799A48F1915"]
+			id: "771228FABFF32E86"
+			tasks: [{
+				id: "5CCC9FC3576D452A"
+				item: "kubejs:integrated_contraption"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			id: "1152148CB39D8A2B"
+			tasks: [{
+				id: "13CB4B460A0D9A55"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["70AF86B4A0D6A158"]
+			id: "35B59AB143CA74BE"
+			tasks: [{
+				id: "22E84DAE92500AA7"
+				item: "gtceu:charcoal_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.0d
 		}
 	]
 	title: "Primitive Industry - WIP"

@@ -358,19 +358,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["714CA5ED83124FE1"]
-			hide_dependency_lines: true
-			id: "21563799A48F1915"
-			size: 1.0d
-			tasks: [{
-				id: "072E39D3BCC9DBB9"
-				item: "minecraft:gold_nugget"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -7.0d
-		}
-		{
 			dependencies: [
 				"477E9725E09A6093"
 				"3DCE9199510A9223"
@@ -567,7 +554,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["588B000F10B0691C"]
@@ -580,43 +567,6 @@
 			}]
 			x: -12.0d
 			y: -11.0d
-		}
-		{
-			dependencies: ["684FAA520167CC51"]
-			id: "5880CFBC8A0DC3C4"
-			size: 1.0d
-			tasks: [{
-				id: "5B0D55C6E91676F5"
-				item: "gtceu:ulv_stone_barrel"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["59A805C314717BA0"]
-			id: "63D792EF5D75290F"
-			size: 1.0d
-			tasks: [{
-				id: "1990722E39FEE28B"
-				item: "gtceu:nickel_ingot"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["5880CFBC8A0DC3C4"]
-			id: "37993D821DB1DC7F"
-			shape: "gear"
-			size: 1.0d
-			tasks: [{
-				id: "10794213067A93D4"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -7.0d
 		}
 		{
 			dependencies: ["4F13AF131EC84DAA"]
@@ -832,21 +782,9 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["684FAA520167CC51"]
-			id: "76411EC26EEC2AB0"
-			size: 1.0d
-			tasks: [{
-				id: "290EF434B0CC2FDE"
-				item: "gtceu:ulv_barrel"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -9.0d
-		}
-		{
 			dependencies: [
-				"76411EC26EEC2AB0"
 				"3ACDDC1DEF389851"
+				"3FCB8FD519CECE59"
 			]
 			id: "2E27CCDF1CEBFE28"
 			size: 1.0d
@@ -862,11 +800,18 @@
 			dependencies: ["684FAA520167CC51"]
 			id: "3B445A3D85B2678C"
 			size: 1.0d
-			tasks: [{
-				id: "756B4663EAC9A853"
-				item: "create:steam_engine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "756B4663EAC9A853"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					id: "744925169E87053E"
+					item: "fluidlogistics:oscillating_steam_engine"
+					type: "item"
+				}
+			]
 			x: -6.0d
 			y: -9.0d
 		}
@@ -1013,6 +958,17 @@
 			}]
 			x: -10.0d
 			y: -11.0d
+		}
+		{
+			dependencies: ["684FAA520167CC51"]
+			id: "3FCB8FD519CECE59"
+			tasks: [{
+				id: "0CEE25AFEA73621F"
+				item: "gtceu:barrel_multi"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.0d
 		}
 	]
 	title: "Contraptions of Sorrow"

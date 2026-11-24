@@ -31,6 +31,10 @@ StartupEvents.registry('item', (event) => {
     event.create('logistic_contraption').texture(`kubejs:item/hm/pre-lv/logistic_contraption`);
 
     event.create('integrated_contraption').texture(`kubejs:item/hm/pre-lv/integrated_contraption`);
+    
+    event.create('compressed_refractory_heat_clay').texture(`kubejs:item/hm/pre-lv/compressed_refractory_heat_clay`);
+
+    event.create('refractory_heat_brick').texture(`kubejs:item/hm/pre-lv/refractory_heat_brick`);
 
     // === Incomplete parts ===
     [

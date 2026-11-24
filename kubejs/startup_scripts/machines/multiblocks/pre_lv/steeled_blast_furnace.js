@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.aisle('FAF', 'A@A', 'AAA', 'AAA')
 			.where('A', Predicates.blocks(GTBlocks.CASING_PRIMITIVE_BRICKS.get()))
             .where('#', Predicates.blocks('minecraft:air'))
-            .where('F', Predicates.blocks('gtceu:cast_iron_frame'))
+            .where('F', Predicates.blocks('gtceu:gray_iron_frame'))
 			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
 		.workableCasingModel('gtceu:block/casings/solid/machine_primitive_bricks', 'kubejs:block/multiblock/primitive_blast_furnace')

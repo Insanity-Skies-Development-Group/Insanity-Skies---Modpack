@@ -36,30 +36,20 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu
         .mixer(id('coke_clay'))
         .itemInputs('4x gtceu:quartz_sand_dust', '4x gtceu:clay_dust')
-        .itemOutputs('8x gtceu:coke_clay_dust')
+        .itemOutputs('4x gtceu:coke_clay_dust')
         .duration(240)
         .EUt(6);
 
     event.recipes.create
-        .mixing('8x gtceu:coke_clay_dust', ['4x gtceu:quartz_sand_dust', '4x gtceu:clay_dust'])
+        .mixing('4x gtceu:coke_clay_dust', ['4x gtceu:quartz_sand_dust', '4x gtceu:clay_dust'])
         .id('insanity_skies:create_mixer/coke_clay_dust');
 
     event.recipes.gtceu
         .centrifuge(id('coke_clay'))
-        .itemInputs('8x gtceu:coke_clay_dust')
+        .itemInputs('4x gtceu:coke_clay_dust')
         .itemOutputs('4x gtceu:quartz_sand_dust', '4x gtceu:clay_dust')
         .duration(168)
         .EUt(30);
-
-    event.remove({ id: 'minecraft:charcoal' });
-
-    event.smelting(`2x kubejs:charcoal_pellet`, `#minecraft:logs_that_burn`)
-        .id('insanity_skies:smelting/charcoal_pellet_manual_only');
-
-    event.recipes.create.crushing(
-        ['3x kubejs:charcoal_pellet', Item.of('kubejs:charcoal_pellet').withChance(0.5)],
-        'minecraft:charcoal'
-    );
 
     event.recipes.create.milling(['gtceu:charcoal_dust'], 'minecraft:charcoal');
     event.recipes.create.milling(['minecraft:sand'], 'minecraft:gravel');

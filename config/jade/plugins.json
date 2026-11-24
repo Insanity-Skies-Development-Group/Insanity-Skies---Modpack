@@ -55,7 +55,7 @@
     "chiseled_bookshelf": true
   },
   "fluidlogistics": {
-    "blaze_cooler_icon": true
+    "snow_golem_freezer_icon": true
   },
   "gtceu": {
     "layered_recipe_info": true,
@@ -82,20 +82,6 @@
     "cable_info": true,
     "parallel_info": true,
     "data_bank": true
-  },
-  "start_core": {
-    "min_parallel": true,
-    "fusion_reactor_info": true,
-    "hellforge_heat_info": true,
-    "threading_stat_blocks": true,
-    "vacuum_chemical_reaction_chamber_info": true,
-    "dream_link_network_info": true,
-    "solar_cells": true,
-    "solar_machine_info": true,
-    "modular_interface_hatch_part_machine": true,
-    "variadic_redstone_info": true,
-    "threading_recipes": true,
-    "abyssal_harvester_info": true
   },
   "jade": {
     "coordinates.rel": false,

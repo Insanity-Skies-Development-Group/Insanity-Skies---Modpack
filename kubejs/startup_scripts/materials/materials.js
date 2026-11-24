@@ -248,16 +248,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     const conductor = (name, elements, color, icon, blasting, cable, flags) => {
         event.create(name).ingot().fluid().components(elements).color(color).iconSet(icon).flags(flags).blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]).cableProperties(cable[0], cable[1], cable[2], cable[3]);
     }
-    
-    const conductorSuper = (name, elements, color, blasting, cable, rotorstat) => {
-        if (blasting.includes(blasting[0])){
-            event.create(name).ingot().fluid().components(elements).color(color).iconSet(SHINY).flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, fine_wire)
-                .blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]).cableProperties(cable[0], cable[1], cable[2], cable[3]).rotorStats(rotorstat[0], rotorstat[1], rotorstat[2], rotorstat[3]);
-        } else {
-            event.create(name).ingot().fluid().components(elements).color(color).iconSet(SHINY).flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, fine_wire)
-                .cableProperties(cable[0], cable[1], cable[2], cable[3]).rotorStats(rotorstat[0], rotorstat[1], rotorstat[2], rotorstat[3]);
-        }
-    }
 
     const compDustLiquidOre = (name, elements, color, flags) => {
         event.create(name).dust().liquid().ore(2, 1).components(elements).color(color).flags(flags);
@@ -291,8 +281,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create(name).liquid(new GTFluidBuilder().temperature(temp)).plasma().components(elements).color(color).flags(flags);
     }
 
+    event.create('mystery').element(GTElements.get('mystery'));
+
         // === Early Game ===
     event.create('latex').liquid().color(0xe3e1cc);
+
+    event.create('fungal_concrete').liquid().color(0x8372a3);
 
     [
         'andesite','basalt','blackstone','deepslate','diorite','granite','tuff'
@@ -318,53 +312,52 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             ]).build()
         );
 
-    event.create('coke_clay').dust().color(0xd7d2aa).secondaryColor(0xa09c78);
-
-    compIngot('crude_cast_iron', '1x pig_iron', 0x3d413f, DULL, [], [no_decomp, no_smelt]);
-
-    compIngotLiquidSecColor('leaded_bronze', ['16x copper', '3x tin', '1x lead'], 0xc99c5d, 0x3a2a3f, METALLIC, [], [
-        not_alloy,
-        long_rod,
-        plates,
-        rod,
-        frame,
-        bolt_and_screw,
-        no_decomp, 
-        no_smelt
-    ]);
+    event.create('coke_clay').dust().color(0xd7d2aa).secondaryColor(0xa09c78).flags(no_decomp, no_smelt);
 
     event
-        .create('crude_wrought_iron')
-        .ingot()
-        .liquid(new GTFluidBuilder().temperature(1700))
-        .components('1x wrought_iron')
-        .color(0x7a6e69)
-        .iconSet(DULL)
+        .create('refractory_heat_clay')
+        .dust()
+        .components('1x fireclay','1x magnesia','1x mica')
+        .color(0x704885)
+        .secondaryColor(0x37167a)
+        .iconSet(ROUGH)
         .flags(no_decomp, no_smelt);
 
+    compIngotLiquidSecColor(
+        'leaded_bronze', 
+        ['16x copper', '3x tin', '1x lead'], 
+        0xc99c5d, 0x3a2a3f, 
+        METALLIC,
+        [1125, 'low', VA('lv'), 120], 
+        [not_alloy,long_rod,plates,rod,frame,bolt_and_screw,no_decomp, no_smelt]
+    );
+
     event
-        .create('cast_iron')
+        .create('gray_iron')
         .ingot(1)
         .liquid()
-        .components('18x crude_cast_iron', '1x bismuth', '2x copper')
+        .components('1x iron')
         .color(0x696e6c)
         .secondaryColor(0x4c5052)
         .iconSet(METALLIC)
         .blastTemp(1450, 'low', VA('mv'), 1200)
         .flags(
-            not_alloy,
-            foil,
-            gear,
-            long_rod,
-            plates,
-            rod,
-            rotor,
-            small_gear,
-            ring,
-            frame,
-            bolt_and_screw,
-            no_decomp,
-            no_smelt
+            not_alloy,foil,gear,long_rod,plates,rod,rotor,small_gear,
+            ring,frame,bolt_and_screw,no_decomp,no_smelt
+        );
+
+    event
+        .create('nickeled_gray_iron')
+        .ingot(1)
+        .liquid()
+        .components('1x iron')
+        .color(0xb4b2b8)
+        .secondaryColor(0x4c5052)
+        .iconSet(METALLIC)
+        .blastTemp(1450, 'low', VA('mv'), 1200)
+        .flags(
+            not_alloy,foil,gear,long_rod,plates,rod,rotor,small_gear,
+            ring,frame,bolt_and_screw,no_decomp,no_smelt
         );
 
     // // Materials

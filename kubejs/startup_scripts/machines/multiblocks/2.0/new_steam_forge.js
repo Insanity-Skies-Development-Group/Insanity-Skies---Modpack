@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
             .aisle('BDDDB', 'B   B', 'B   B', 'B   B', 'BB BB', ' B B ', ' BBB ') 
             .aisle(' CDC ', 'B   B', 'B   B', 'BB BB', ' BBB ', ' BBB ', '  B  ') 
             .aisle('A B A', 'ABBBA', 'AB@BA', ' BBB ', '  B  ', '     ', '     ') 
-            .where('A', Predicates.blocks('gtceu:cast_iron_frame'))
+            .where('A', Predicates.blocks('gtceu:gray_iron_frame'))
             .where(' ', Predicates.any())
             .where('B', Predicates.blocks('kubejs:high_steam_machine_casing'))
             .where('C', Predicates.blocks('kubejs:primitive_heat_escape_casing'))

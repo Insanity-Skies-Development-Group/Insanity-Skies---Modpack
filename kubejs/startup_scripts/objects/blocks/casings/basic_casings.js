@@ -22,6 +22,17 @@ StartupEvents.registry('block', (event) => {
         .textureAll('kubejs:block/hardmode/reinforced_stone_bricks');
 
     event
+        .create('refractory_heat_bricks')
+        .hardness(5)
+        .resistance(1)
+        .soundType('stone')
+        .requiresTool(true)
+        .noValidSpawns(true)
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_stone_tool')
+        .textureAll('kubejs:block/hardmode/refractory_heat_bricks');
+
+    event
         .create('peek_casing')
         .hardness(5)
         .resistance(1)

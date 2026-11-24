@@ -383,34 +383,6 @@ ServerEvents.recipes((event) => {
         .loops(2)
         .id('insanity_skies:sequenced_assembly/fluid_cell');
 
-    // event
-    //     .shaped(Item.of('thermal:satchel'), [
-    //         'FWF', 
-    //         'RCS', 
-    //         'FWS'
-    //     ], {
-    //         F: 'minecraft:leather',
-    //         W: '#minecraft:wool',
-    //         R: 'gtceu:tin_ring',
-    //         C: 'minecraft:chest',
-    //         S: '#forge:string',
-    //     })
-    //     .id('insanity_skies:shaped/satchel_leather');
-
-    // event
-    //     .shaped(Item.of('thermal:satchel'), [
-    //         'FWF', 
-    //         'RCS', 
-    //         'FWS'
-    //     ], {
-    //         F: 'thermal:beekeeper_fabric',
-    //         W: '#minecraft:wool',
-    //         R: 'gtceu:tin_ring',
-    //         C: 'minecraft:chest',
-    //         S: '#forge:string',
-    //     })
-    //     .id('insanity_skies:shaped/satchel_fabric');
-
     event.remove({ id: 'gtceu:assembler/flower_pot' });
     event.recipes.gtceu
         .assembler(id('flower_pot'))
@@ -422,23 +394,11 @@ ServerEvents.recipes((event) => {
 
     //Mass Removals
 
-    // const ThermalRemoval = [
-    //     'redstone_servo',
-    //     'device_tree_extractor',
-    //     'drill_head',
-    //     'fluid_cell_frame',
-    //     'device_rock_gen',
-    //     'device_water_gen',
-    //     'satchel',
-    // ];
-    // ThermalRemoval.forEach((item) => {
-    //     event.remove({ output: `thermal:${item}` });
-    // });
     const GtceuRemoval = ['primitive_pump', 'lp_steam_alloy_smelter', 'compressed_coke_clay', 'matchbox'];
     GtceuRemoval.forEach((item) => {
         event.remove({ output: `gtceu:${item}` });
     });
-    const MinecraftRemoval = ['stonecutter', 'furnace', 'campfire', 'composter'];
+    const MinecraftRemoval = ['furnace', 'composter'];
     MinecraftRemoval.forEach((item) => {
         event.remove({ output: `minecraft:${item}` });
     });

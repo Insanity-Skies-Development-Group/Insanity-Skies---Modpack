@@ -142,7 +142,7 @@ ServerEvents.recipes((event) => {
     ]);
     UlvMachine('mixer', [
         '#forge:glass',
-        'gtceu:cast_iron_rotor',
+        'gtceu:gray_iron_rotor',
         '#forge:glass',
         '#forge:glass',
         'gtceu:ulv_electric_motor',
@@ -155,9 +155,9 @@ ServerEvents.recipes((event) => {
         'gtceu:tin_alloy_normal_fluid_pipe',
         '#gtceu:circuits/ulv',
         'gtceu:tin_alloy_normal_fluid_pipe',
-        'gtceu:cast_iron_rotor',
+        'gtceu:gray_iron_rotor',
         'gtceu:ulv_machine_hull',
-        'gtceu:cast_iron_rotor',
+        'gtceu:gray_iron_rotor',
         'gtceu:ulv_electric_motor',
         'gtceu:red_alloy_single_cable',
         'gtceu:ulv_electric_motor',
@@ -434,8 +434,8 @@ ServerEvents.recipes((event) => {
         [
             '1x gtceu:red_alloy_single_cable',
             '1x gtceu:tin_alloy_normal_fluid_pipe',
-            '1x gtceu:cast_iron_screw',
-            '1x gtceu:cast_iron_rotor',
+            '1x gtceu:gray_iron_screw',
+            '1x gtceu:gray_iron_rotor',
             '2x gtceu:rubber_ring',
             '1x gtceu:ulv_electric_motor',
         ],

@@ -99,13 +99,13 @@ ServerEvents.recipes((event) => {
                 .EUt(4);
     };
     SteamCasing('gtceu', 'steam_machine_casing', 'minecraft:bricks', 'bronze');
-    SteamCasing('kubejs', 'high_steam_machine_casing', 'gtceu:firebricks', 'cast_iron');
+    SteamCasing('kubejs', 'high_steam_machine_casing', 'gtceu:firebricks', 'gray_iron');
     SteamCasing('gtceu', 'industrial_steam_casing', false, 'brass');
     SteamCasing('gtceu', 'bronze_machine_casing', false, 'bronze');
-    SteamCasing('gtceu', 'steel_machine_casing', false, 'cast_iron');
+    SteamCasing('gtceu', 'steel_machine_casing', false, 'gray_iron');
 
     const BrickedCasing = (block, brick) => {
-        const material = block == 'steel' ? 'cast_iron' : `${block}`;
+        const material = block == 'steel' ? 'gray_iron' : `${block}`;
         event.recipes.create
             .mechanical_crafting(Item.of(`gtceu:${block}_brick_casing`), [
                 'PPP', 
@@ -158,15 +158,15 @@ ServerEvents.recipes((event) => {
         'gtceu:double_bronze_plate',
     ]);
     SteamMachine('hp_steam_solid_boiler', [
-        'gtceu:cast_iron_plate',
-        'gtceu:cast_iron_plate',
-        'gtceu:cast_iron_plate',
+        'gtceu:gray_iron_plate',
+        'gtceu:gray_iron_plate',
+        'gtceu:gray_iron_plate',
         'gtceu:tin_alloy_small_fluid_pipe',
         'gtceu:lp_steam_solid_boiler',
         'gtceu:tin_alloy_small_fluid_pipe',
-        'gtceu:double_cast_iron_plate',
+        'gtceu:double_gray_iron_plate',
         'gtceu:steel_brick_casing',
-        'gtceu:double_cast_iron_plate',
+        'gtceu:double_gray_iron_plate',
     ]);
     SteamMachine('hp_steam_liquid_boiler', [
         'gtceu:tin_alloy_small_fluid_pipe',
@@ -192,7 +192,7 @@ ServerEvents.recipes((event) => {
     ]);
     SteamMachine('hp_steam_furnace', [
         'gtceu:tin_alloy_small_fluid_pipe',
-        'gtceu:cast_iron_ring',
+        'gtceu:gray_iron_ring',
         'gtceu:tin_alloy_small_fluid_pipe',
         'gtceu:tin_alloy_small_fluid_pipe',
         'gtceu:lp_steam_furnace',
@@ -214,13 +214,13 @@ ServerEvents.recipes((event) => {
     ]);
     SteamMachine('hp_steam_extractor', [
         'gtceu:tin_alloy_normal_fluid_pipe',
-        'gtceu:cast_iron_plate',
+        'gtceu:gray_iron_plate',
         'gtceu:tin_alloy_normal_fluid_pipe',
         'gtceu:lp_steam_extractor',
         'gtceu:steel_brick_casing',
         'minecraft:glass',
         'gtceu:tin_alloy_normal_fluid_pipe',
-        'gtceu:cast_iron_plate',
+        'gtceu:gray_iron_plate',
         'gtceu:tin_alloy_normal_fluid_pipe',
     ]);
     SteamMachine('lp_steam_macerator', [
@@ -235,15 +235,15 @@ ServerEvents.recipes((event) => {
         'gtceu:bronze_gear',
     ]);
     SteamMachine('hp_steam_macerator', [
-        'gtceu:cast_iron_gear',
+        'gtceu:gray_iron_gear',
         'gtceu:tin_alloy_small_fluid_pipe',
-        'gtceu:cast_iron_gear',
+        'gtceu:gray_iron_gear',
         'gtceu:tin_alloy_small_fluid_pipe',
         'gtceu:lp_steam_macerator',
         'gtceu:tin_alloy_small_fluid_pipe',
-        'gtceu:cast_iron_gear',
+        'gtceu:gray_iron_gear',
         'gtceu:steel_brick_casing',
-        'gtceu:cast_iron_gear',
+        'gtceu:gray_iron_gear',
     ]);
     SteamMachine('lp_steam_compressor', [
         'gtceu:bronze_small_fluid_pipe',
@@ -262,7 +262,7 @@ ServerEvents.recipes((event) => {
         'gtceu:tin_alloy_small_fluid_pipe',
         'gtceu:lp_steam_compressor',
         'gtceu:steel_brick_casing',
-        'gtceu:double_cast_iron_plate',
+        'gtceu:double_gray_iron_plate',
         'gtceu:tin_alloy_small_fluid_pipe',
         'gtceu:tin_alloy_small_fluid_pipe',
         'gtceu:tin_alloy_small_fluid_pipe',
@@ -286,7 +286,7 @@ ServerEvents.recipes((event) => {
         'gtceu:steel_brick_casing',
         'gtceu:tin_alloy_small_fluid_pipe',
         'gtceu:tin_alloy_small_fluid_pipe',
-        'gtceu:double_cast_iron_plate',
+        'gtceu:double_gray_iron_plate',
         'gtceu:tin_alloy_small_fluid_pipe',
     ]);
     SteamMachine('hp_steam_blaster', [

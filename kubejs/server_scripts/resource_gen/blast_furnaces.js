@@ -22,10 +22,10 @@ ServerEvents.recipes((event) => {
             .id(`insanity_skies:create_mixer/${idConst.split(',')[0]}`);
     };
     CreateMixing('2x gtceu:pig_iron_dust', ['2x gtceu:iron_dust', 'gtceu:charcoal_dust'], 'lowheated');
-    CreateMixing(Fluid.of('gtceu:cast_iron', 288),['2x gtceu:crude_cast_iron_dust', 'gtceu:tiny_bismuth_dust', '2x gtceu:tiny_copper_dust'],'superheated');
+    // CreateMixing(Fluid.of('gtceu:gray_iron', 288),['2x gtceu:crude_gray_iron_dust', 'gtceu:tiny_bismuth_dust', '2x gtceu:tiny_copper_dust'],'superheated');
     CreateMixing('9x gtceu:potin_dust', ['6x gtceu:copper_dust', '2x gtceu:tin_dust', 'gtceu:lead_dust'], 'lowheated');
     CreateMixing('2x gtceu:tin_alloy_dust', ['gtceu:iron_dust', 'gtceu:tin_dust'], 'lowheated');
-    CreateMixing(Fluid.of('gtceu:crude_wrought_iron', 288),['2x gtceu:pig_iron_ingot', 'gtceu:charcoal_dust'],'superheated');
+    // CreateMixing(Fluid.of('gtceu:crude_wrought_iron', 288),['2x gtceu:pig_iron_ingot', 'gtceu:charcoal_dust'],'superheated');
     CreateMixing(Fluid.of('gtceu:red_alloy', 144), ['gtceu:copper_dust', '4x minecraft:redstone'], 'superheated');
     CreateMixing(Fluid.of('gtceu:gold', 144), ['9x minecraft:gold_nugget'], 'superheated');
 
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
             'GFG', 
             'WPW'
         ], {
-            G: 'gtceu:small_cast_iron_gear',
+            G: 'gtceu:small_gray_iron_gear',
             W: 'gtceu:wrought_iron_plate',
             P: 'gtceu:potin_screw',
             F: 'gtceu:primitive_blast_furnace',
@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
             'gtceu:steeled_blast_furnace',
             '4x dustrial_decor:cinder_bricks',
             '6x gtceu:double_wrought_iron_plate',
-            '2x gtceu:cast_iron_gear',
+            '2x gtceu:gray_iron_gear',
             'createlowheated:basic_burner',
             '8x gtceu:wrought_iron_screw'
         )
@@ -158,17 +158,17 @@ ServerEvents.recipes((event) => {
                 .itemOutputs(output + '_block', `gtceu:${ashType}ash_dust`)
                 .duration(9 * Duration);
     };
-    PrimBlasting(
-        'gtceu:pig_iron',
-        'gtceu:crude_cast_iron',
-        400,
-        '#minecraft',
-        'coals',
-        '',
-        '#gtceu',
-        'coal_blocks',
-        'ingot'
-    );
+    // PrimBlasting(
+    //     'gtceu:pig_iron',
+    //     'gtceu:crude_gray_iron',
+    //     400,
+    //     '#minecraft',
+    //     'coals',
+    //     '',
+    //     '#gtceu',
+    //     'coal_blocks',
+    //     'ingot'
+    // );
     PrimBlasting(
         'gtceu:pig_iron',
         'gtceu:wrought_iron',
@@ -180,17 +180,17 @@ ServerEvents.recipes((event) => {
         'coke_block',
         'ingot'
     );
-    PrimBlasting(
-        'gtceu:crude_wrought_iron',
-        'gtceu:wrought_iron',
-        600,
-        '#minecraft',
-        'coals',
-        '',
-        '#gtceu',
-        'coal_blocks',
-        'ingot'
-    );
+    // PrimBlasting(
+    //     'gtceu:crude_wrought_iron',
+    //     'gtceu:wrought_iron',
+    //     600,
+    //     '#minecraft',
+    //     'coals',
+    //     '',
+    //     '#gtceu',
+    //     'coal_blocks',
+    //     'ingot'
+    // );
     PrimBlasting('gtceu:potin', 'gtceu:potin', 240, '#minecraft', 'coals', '', '#gtceu', 'coal_blocks', 'dust');
     PrimBlasting('gtceu:potin', 'gtceu:potin', 160, 'gtceu', 'coke_gem', 'dark_', 'gtceu', 'coke_block', 'dust');
 

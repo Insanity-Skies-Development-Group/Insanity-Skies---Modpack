@@ -1,3 +1,5 @@
+// priority: 150
+
 // Flag Modification
 GTCEuStartupEvents.registry('gtceu:material', (event) => {
     
@@ -74,14 +76,6 @@ GTCEuStartupEvents.registry('gtceu:material', (event) => {
     GTMaterials.NaquadahEnriched.setProperty(PropertyKey.FLUID_PIPE, new FluidPipeProperties(8000, 500, true, true, true, false));
 
     // Chemical Modifications (Reflected in autogen)
-    // GTMaterials.Netherite.setComponents('1x debris', '1x gold');
+    // GTMaterials.Netherrite.setComponents('1x debris', '1x gold');
     
-});
-
-// Formula Modifications (Does not reflect in autogen)
-GTCEuStartupEvents.materialModification((event) => {
-    // GTMaterials.get('yttrium_carbonate').setFormula('Y2(CO3)3');
-    // GTMaterials.get('platinum_salt').setFormula('(NH3)4PtCl6');
-    // GTMaterials.get('palladium_salt').setFormula('(NH3)5PdCl4');
-    // GTMaterials.get('iridium_rich_residue').setFormula('Ir?Oₓ');
 });

@@ -14,17 +14,19 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('reinforced_blast_furnace', 'primitive')
         .rotationState(RotationState.ALL)
         .recipeType('reinforced_blast_furnace')
-		.appearanceBlock(() => Block.getBlock('dustrial_decor:cinder_block'))
+		.appearanceBlock(() => Block.getBlock('kubejs:refractory_heat_bricks'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('DDD', 'PPP', 'PPP', 'PPP')
-            .aisle('DDD', 'P P', 'P P', 'P P')
-            .aisle('DDD', 'PCP', 'PPP', 'PPP')
-            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('P', Predicates.blocks('dustrial_decor:cinder_block'))
-            .where('D', Predicates.blocks('dustrial_decor:cinder_bricks'))
-            .where(' ', Predicates.blocks('minecraft:air'))
+            .aisle(' PPP ', ' PPP ', '  P  ', '  P  ', '     ', '     ')
+            .aisle('PPPPP', 'PP#PP', ' P#P ', ' P#P ', ' PPP ', ' PPP ')
+            .aisle('PPPPP', 'P###P', 'P###P', 'P###P', ' P#P ', ' P#P ')
+            .aisle('PPPPP', 'PP#PP', ' P#P ', ' P#P ', ' PPP ', ' PPP ')
+            .aisle(' PPP ', ' P@P ', '  P  ', '  P  ', '     ', '     ')
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('P', Predicates.blocks('kubejs:refractory_heat_bricks'))
+            .where('#', Predicates.blocks('minecraft:air'))
+			.where(' ', Predicates.any())
             .build())
-        .workableCasingModel('dustrial_decor:block/cinder_block_side',
+        .workableCasingModel('kubejs:block/hardmode/refractory_heat_bricks',
         'gtceu:block/multiblock/primitive_blast_furnace')
         .editableUI(
 			global.ui_builder({

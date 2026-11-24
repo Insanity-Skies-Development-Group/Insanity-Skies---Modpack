@@ -891,7 +891,7 @@ ServerEvents.recipes((event) => {
             S: '#forge:string',
             P: '#minecraft:wooden_slabs',
             L: 'gtceu:lead_small_fluid_pipe',
-            G: 'gtceu:cast_iron_gear',
+            G: 'gtceu:gray_iron_gear',
             A: 'create:andesite_alloy',
             D: 'minecraft:dispenser',
         })

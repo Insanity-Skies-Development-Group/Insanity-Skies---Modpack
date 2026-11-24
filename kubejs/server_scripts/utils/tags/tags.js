@@ -121,14 +121,6 @@ ServerEvents.tags('item', (event) => {
     ];
     const Megacells = [/megacells:sky_steel.*/];
 
-    const AdAstra = [/ad_astra:.*/];
-
-    // thermal.forEach((item) => {
-    //     event.removeAllTagsFrom(`${item}`);
-    // });
-    // thermal_extra.forEach((item) => {
-    //     event.removeAllTagsFrom(`${item}`);
-    // });
     Exnihilo.forEach((item) => {
         event.removeAllTagsFrom(`${item}`);
     });
@@ -138,20 +130,6 @@ ServerEvents.tags('item', (event) => {
     Megacells.forEach((item) => {
         event.removeAllTagsFrom(`${item}`);
     });
-    AdAstra.forEach((item) => {
-        event.removeAllTagsFrom(`${item}`);
-    });
 
-});
 
-ServerEvents.tags('fluid', (event) => {
-    event.remove('create:bottomless/allow', 'minecraft:lava');
-    // ['shellite', 'twinite', 'dragonsteel'].forEach((thermalExtraSC) => {
-    //     event.remove(`forge:molten_${thermalExtraSC}`, `thermal_extra:${thermalExtraSC}`);
-    // });
-    // event.remove('forge:sulfuric_acid', 'vintage:sulfuric_acid');
-
-    // event.removeAllTagsFrom(/^thermal_extra:(?!.*_oil$).*/);
-
-    // event.add('start_core:komaru/faematter', 'gtceu:faematter');
 });

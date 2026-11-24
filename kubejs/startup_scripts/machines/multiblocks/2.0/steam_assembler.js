@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
             .where('B', Predicates.blocks('gtceu:steel_machine_casing'))
             .where('C', Predicates.blocks('kubejs:high_steam_machine_casing'))
             .where('D', Predicates.blocks('create:andesite_encased_shaft'))
-            .where('E', Predicates.blocks('gtceu:cast_iron_frame'))
+            .where('E', Predicates.blocks('gtceu:gray_iron_frame'))
             .where('F', Predicates.blocks('gtceu:tempered_glass'))
             .where('G', Predicates.blocks('gtceu:bronze_gearbox'))
             .where('H', Predicates.blocks('gtceu:bronze_pipe_casing'))

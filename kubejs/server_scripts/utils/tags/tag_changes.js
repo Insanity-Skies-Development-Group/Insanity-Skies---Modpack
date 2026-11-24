@@ -23,9 +23,3 @@ ServerEvents.tags('item', (event) => {
     event.add('kubejs:ball_casting_mold', 'kubejs:ball_ceramic_casting_mold');
     event.add('kubejs:ball_casting_mold', 'gtceu:ball_casting_mold');
 });
-
-ServerEvents.tags('fluid', (event) => {
-    event.remove('create:bottomless/allow', 'minecraft:lava');
-    event.remove('create:bottomless/allow', 'minecraft:water');
-    // event.remove('forge:redstone', 'thermal:redstone');
-});

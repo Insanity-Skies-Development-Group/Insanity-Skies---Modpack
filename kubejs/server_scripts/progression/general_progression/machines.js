@@ -456,7 +456,7 @@ ServerEvents.recipes(event => {
     // event.remove({output: /gtceu:.*coil_block/})
 
     // event.recipes.gtceu.assembler(id('cupronickel_coil_block'))
-    //     .itemInputs('gtceu:cast_iron_frame','8x gtceu:cupronickel_double_wire','8x gtceu:bronze_foil','32x minecraft:paper')
+    //     .itemInputs('gtceu:gray_iron_frame','8x gtceu:cupronickel_double_wire','8x gtceu:bronze_foil','32x minecraft:paper')
     //     .inputFluids('gtceu:tin_alloy 144')
     //     .itemOutputs('gtceu:cupronickel_coil_block')
     //     .duration(200)

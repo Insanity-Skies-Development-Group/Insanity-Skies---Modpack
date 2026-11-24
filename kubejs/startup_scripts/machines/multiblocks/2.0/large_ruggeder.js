@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', (event) => {
             .aisle(' B DDD B ', ' BCCCCCB ', ' BCCCCCB ', ' CCCCCCC ', ' BCCCCCB ', '  CCCCC  ', '   CCC   ') 
             .aisle('   B B   ', '   BCB   ', '   CCC   ', '   C@C   ', '   CCC   ', '    C    ', '         ') 
             .where(' ', Predicates.any())
-            .where('B', Predicates.blocks('gtceu:cast_iron_frame'))
+            .where('B', Predicates.blocks('gtceu:gray_iron_frame'))
             .where('C', Predicates.blocks('kubejs:reinforced_stone_bricks'))
             .where('D', Predicates.blocks('kubejs:primitive_heat_escape_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
