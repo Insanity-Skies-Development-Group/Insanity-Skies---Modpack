@@ -55,8 +55,14 @@ BlockEvents.rightClicked('minecraft:dirt', (event) => {
     if (item.id !== 'kubejs:water_bowl') return;
 
     block.set('minecraft:mud');
-    player.setItemInHand(hand, Item.of('minecraft:bowl'));
 
+    if (item.count > 1) {
+        player.give(Item.of('minecraft:bowl'));
+        item.count--;
+    } else {
+        player.setItemInHand(hand, Item.of('minecraft:bowl'));
+    }
+    
     level.playSound(null, block.pos, 'minecraft:item.bucket.fill', 'blocks');
     player.swing();
 });
@@ -67,7 +73,13 @@ BlockEvents.rightClicked('exnihilosequentia:dust', (event) => {
     if (item.id !== 'kubejs:water_bowl') return;
 
     block.set('minecraft:clay');
-    player.setItemInHand(hand, Item.of('minecraft:bowl'));
+
+    if (item.count > 1) {
+        player.give(Item.of('minecraft:bowl'));
+        item.count--;
+    } else {
+        player.setItemInHand(hand, Item.of('minecraft:bowl'));
+    }
 
     level.playSound(null, block.pos, 'minecraft:item.bucket.fill', 'blocks');
     player.swing();
@@ -80,7 +92,13 @@ BlockEvents.rightClicked('minecraft:dead_bush', (event) => {
     if (item.id !== 'kubejs:water_bowl') return;
 
     block.set('minecraft:jungle_sapling');
-    player.setItemInHand(hand, Item.of('minecraft:bowl'));
+
+    if (item.count > 1) {
+        player.give(Item.of('minecraft:bowl'));
+        item.count--;
+    } else {
+        player.setItemInHand(hand, Item.of('minecraft:bowl'));
+    }
 
     level.spawnParticles(
         'minecraft:happy_villager',

@@ -139,8 +139,8 @@ ServerEvents.recipes((event) => {
 
     small_springs.forEach((metal) =>
         seq_assembly(
-            `2x gtceu:small_${metal}_spring`,
-            `gtceu:${metal}_spring`,
+            `1x gtceu:small_${metal}_spring`,
+            `gtceu:${metal}_rod`,
             'kubejs:incomplete_small_spring',
             ['cut', 'cut', 'press'],
             2

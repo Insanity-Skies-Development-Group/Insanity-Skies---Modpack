@@ -726,11 +726,6 @@
 					item: "gtceu:zinc_nugget"
 					type: "item"
 				}
-				{
-					id: "73624961FDF25DA8"
-					item: "gtceu:lead_nugget"
-					type: "item"
-				}
 			]
 			title: "Metal Nuggets"
 			x: -6.0d
@@ -1041,12 +1036,6 @@
 				{
 					id: "26015FA48220AAEC"
 					item: "gtceu:zinc_ingot"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6BFFAD60CF6EBEB4"
-					item: "gtceu:lead_ingot"
 					optional_task: true
 					type: "item"
 				}

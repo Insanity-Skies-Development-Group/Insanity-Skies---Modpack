@@ -38,7 +38,13 @@ BlockEvents.rightClicked('exnihilosequentia:jungle_crucible', (event) => {
     if (fluid !== 'minecraft:water' || amount > 1750) return;
 
     block.mergeEntityData({ tank: { FluidName: 'minecraft:water', Amount: amount + 250 } });
-    player.setItemInHand(hand, Item.of('minecraft:bowl'));
+
+    if (item.count > 1) {
+        player.give(Item.of('minecraft:bowl'));
+        item.count--;
+    } else {
+        player.setItemInHand(hand, Item.of('minecraft:bowl'));
+    }
 
     level.playSound(null, block.pos, 'minecraft:item.bucket.empty', 'blocks');
     player.swing();
